@@ -1,4 +1,4 @@
-# Subnetting-Tuorial (in progress)
+# Subnetting-Tutorial (in progress)
 ## Introduction
 Welcome to the Subnetting Tutorial Website, a project developed in collaboration with Dr. Paul D Wiedemeier, Professor of Computer Science at ULM. This website aims to provide a comprehensive and user-friendly resource for learning and mastering subnetting concepts in computer networking.
 ## Features
