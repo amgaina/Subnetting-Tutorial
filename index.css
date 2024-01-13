@@ -1,0 +1,50 @@
+*{
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+.subnetting{
+    max-width: 100%;
+    margin-top: 40px;
+}
+.welcome{
+    text-decoration: underline;
+    margin-top: 50px;
+    font-size: 50px;
+    animation: slideIn 2s ease-in-out;
+    margin-bottom: 40px;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@keyframes slidetop{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.class{
+    margin-top: 40px;
+
+}
+button{
+    padding: 10px;
+    border-radius: 20px;
+    animation: slidetop 2s ease-out;
+}
