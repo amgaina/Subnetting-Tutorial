@@ -6,3 +6,5 @@ Welcome to the Subnetting Tutorial Website, a project developed in collaboration
 - **Practice Exercise:** Reinforce your understanding with a variety of subnetting practice exercises in various class network.
 ### Prerequisites
 - Ensure you have a modern web browser installed.
+
+  The site is live at https://amgaina.github.io/Subnetting-Tutorial/
