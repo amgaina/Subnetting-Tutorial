@@ -4,14 +4,14 @@
 let ip = [];
 
 /* Storing the subnet masks*/
-let sub_masks = [8,9,10,11,12,13,14,15];
-let sub_mask = sub_masks[Math.floor(Math.random() * 8)] 
+let sub_masks = [9,10,11,12,13,14];
+let sub_mask = sub_masks[Math.floor(Math.random() * 6)] 
 
 /* Storing the group sizes for each sub_mask (Hack table that alternates some meaning to the other values in other array)*/
-let group_sizes = [256, 128, 64, 32, 16, 8, 4, 2];
+let group_sizes = [128, 64, 32, 16, 8, 4];
 
 /* Storing the hack for the subnets mask id for each sub_mask (Hack table that alternates some meaning to the other values in other array)*/
-let subnets = [0, 128, 192, 224, 240, 248, 252, 254];
+let subnets = [128, 192, 224, 240, 248, 252];
 
 /* Stores the third octet number for the subnet mask*/
 let subnet;
@@ -25,7 +25,11 @@ let first, last, position;
  * Supposed to be 255 but just did upto 254 to make it simple
  */
 function rand254(){
-    return Math.floor(Math.random()*255);
+    let num = Math.floor(Math.random()*255);
+    while(group_sizes.indexOf(num) != -1 ){
+        num = Math.floor(Math.random() * 255);
+    }
+    return num;
 }
 
 /**
