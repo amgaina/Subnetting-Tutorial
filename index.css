@@ -31,6 +31,9 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.buttons:hover{
+    cursor: pointer;
+}
 @keyframes slidetop{
     from{
         transform: translateY(100%);

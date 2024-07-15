@@ -71,6 +71,10 @@ input{
     padding: 5px;
     font-size: 20px;
 }
-
+.Generate_IP:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    text-decoration: underline;
+}
 
 

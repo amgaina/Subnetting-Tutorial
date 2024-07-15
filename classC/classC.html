@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="classC.css">
 </head>
 <body>
-    <h1 class = "title"> Subnetting Class C IP address.</h1>
-    <p class = "learn"> Learn more about the IP-classes
+    <h1 class = "title"> Subnetting Class C IP addresses.</h1>
+    <p class = "learn"> To learn more about the IP-classes
         <a href = "https://www.meridianoutpost.com/resources/articles/IP-classes.php" target = "_blank" style = "font-size: 20px;"> Click here!</a>
     </p>
     <img src = "../class.png" alt = "classes"/>
 
     <div>
-    <button onclick="showIP()"> Generate network ID</button>
+    <button onclick="showIP()"  class = "Generate_IP"> Generate IP address that would be assigned to a host device</button>
     <p id = "generateIP"></p>
     </div>
 
     <form id = "form-1">
 
         <div id = "id_0">
-            <label for = "subnet_mask"> What will be the classfull subnet mask for the class C network ?</label>
+            <label for = "subnet_mask"> What is the default subnet mask IP address for the class C IP addresses ?</label>
             <select name="subnet_mask" id="subnet_mask" onchange="next0()">
                 <option value = "A"> 255.0.0.0</option>
                 <option value = "B"> 255.255.0.0</option>
@@ -30,45 +30,44 @@
             <div id = "feedback_mssg0"></div>
             <div class = "answer-button" id = "answer-button-1"> How to do ??  </div>
             <div id = "answer-1">
-                Since it is a class C network, default subnet mask will be 255.255.255.0.<br>
-                In binary, it will be 11111111.11111111.11111111.00000000.
+                The default subnet mask IP address for the class C IP addresses is 255.255.255.0
             </div>
         </div>
 
         <div id = "id_1">
-            <label for = "sub_id"> What will be the subnet mask(in decimal) for the given IP address? </label>
+            <label for = "sub_id"> What is the subnet mask IP address associated with the CIDR value for the IP address assigned to the host device ?</label>
             <input type="text" id = "sub_id" name = "sub_id" onchange="next1()"/>
 
             <div id = "feedback_mssg1"></div>
             <div class = "answer-button" id = "answer-button-2"> How to do ??  </div>
             <div id = "answer-2">
-                Each subnet mask is a sequence of contiguous 1s followed by zeros in a 32-bit binary representation.<br>
+                Each subnet mask is a sequence of contiguous 1s followed by contiguous zeros in a 32-bit binary representation.<br>
                 The CIDR notation is expressed as "/X," where X is the number of bits set to 1 in the subnet mask.<br>
                 For example:<br>
                 CIDR Notation: /27<br>
                 Subnet Mask: 11111111.11111111.11111111.11100000 (255.255.255.224 in decimal)<br>
-                In this case, there are 27 bits set to 1, so the CIDR notation is "/27."
+                In this case, there are 27 contiguous bits set to 1, so the CIDR notation is "/27."
                 
             </div>
         </div>
 
         <div id = "id_1_b">
-            <label for = "binary_id"> Convert the given IP address into binary form ?</label>
+            <label for = "binary_id"> What is the binary form of IP address assigned to the host device ?</label>
             <input type="text" id = "binary_id" name = "binary_id" onchange="next1_b()"/><br>
             <div id = "feedback_mssg1_b"></div><br><br>
             <a class = "answer-button" href = "https://whatismyipaddress.com/ip-address-to-binary" target = "_blank" id = "convert-button"> How to Convert ?</a>
         </div>        
 
         <div id = "id_2">
-            <label for = "net_id"> What will be the network ID or the first IP in each network? </label>
+            <label for = "net_id"> What is the network IP address associated with the host device? </label>
             <input type="text" id = "net_id" name = "net_id" onchange="next2()"/>
 
             <div id = "feedback_mssg2"></div>
             <div class = "answer-button" id = "answer-button-3"> How to do ??  </div>
             <div id = "answer-3">
-                Convert the both IP address and subnet mask to the binary form <br>
-                Perform bitwise AND operation between binary representation of the IP address and the binary representation of the subnet mask.<br>
-                Convert the result of the AND operation back to decimal to obtain the network address.<br>
+                First, convert the both IP address and subnet mask to the binary form <br>
+                Second, perform bitwise AND operation between binary representation of the IP address and the binary representation of the subnet mask.<br>
+                Third, convert the result of the AND operation back to decimal to obtain the network address.<br>
                 For example: <br>
                 IP address: 192.168.1.35 <br>
                 Subnet Mask: 255.255.255.192<br>
@@ -80,7 +79,7 @@
         </div>
 
         <div id = "id_3" >
-            <label for = "broad_id"> What will be the broadcast ID or the last IP in each network? </label>
+            <label for = "broad_id"> What broadcast IP address will the host device use to broadcast IP packets to all other computers that reside in our broadcast domain (i.e. subnet)</label>
             <input type="text" id = "broad_id" name = "broad_id" onchange="next3()"/>
             <div id = "feedback_mssg3"></div>
             <div class = "answer-button" id = "answer-button-4"> How to do ??  </div>
@@ -95,18 +94,19 @@
                1. IP Address (192.168.1.35) in binary: 11000000.10101000.00000001.00100011<br>
                2. Subnet Mask: 11111111.11111111.11111111.11000000 <br>
                3. Inverted Subnet Mask in binary:00000000.00000000.00000000.00111111<br>
-               4. Result of OR operation between 1 and 3 : 11000000.10101000.00000001.00000000 <br>
-               5. Broadcast Address: 192.168.1.0
+               4. Result of OR operation between 1 and 3 : 11000000.10101000.00000001.00111111 <br>
+               5. Broadcast Address: 192.168.1.63
             </div>
         </div>
 
         <div id = "id_4">
-            <label for = "first_id"> What will be the first usable host IP? </label>
+            <label for = "first_id"> What is the first assignable IP address for the broadcast domain in which the host device(computer) resides ? </label>
             <input type="text" id = "first_id" name = "first_id" onchange="next4()"/>
             <div id = "feedback_mssg4"></div>
             <div class = "answer-button" id = "answer-button-5"> How to do ??  </div>
             <div id = "answer-5">
                 Simply increment the network IP address by 1.<br>
+                For example: <br>
                 Network IP Address: 215.125.154.128<br>
                 First Host IP Address: 215.125.154.129<br>
                 
@@ -114,27 +114,28 @@
         </div>
 
         <div id = "id_5">
-            <label for = "last_id"> What will be the last usable host IP? </label>
+            <label for = "last_id"> What is the last assignable IP address for the broadcast domain in which our computer resides ?</label>
             <input type="text" id = "last_id" name = "last_id" onchange="next5()"/>
             <div id = "feedback_mssg5"></div>
             <div class = "answer-button" id = "answer-button-6"> How to do ??  </div>
             <div id = "answer-6">
                 Simply decrement the broadcast IP address by 1.<br>
+                For example: <br>
                 Broadcast IP Address: 215.125.154.255<br>
                 Last Host IP Address: 215.125.154.254<br>
             </div>
         </div>
 
         <div id = "id_6">
-            <label for = "usable_host"> What will be the total number of usable host IP? </label>
+            <label for = "usable_host"> How many total assignable IP address exist for the broadcast domain in which the host device (computer) resides ?</label>
             <input type="text" id = "usable_host" name = "usable_host" onchange="next6()"/>
             <div id = "feedback_mssg6"></div>
             <div class = "answer-button" id = "answer-button-7"> How to do ??  </div>
             <div id = "answer-7">
-                Number of usable host will be 2<sup>32 - subnet mask length</sup> - 2.<br>
+                Number of usable host will be 2<sup>32 - CIDR</sup> - 2.<br>
                 We subtract two for the network and broadcast addresses.<br>
                 For example: <br>
-                If subnet mask length( CIDR) : /30 <br>
+                If CIDR value : /30 <br>
                 Number of usable host IP = 2<sup>32 - 30</sup> - 2 = 2.
 
             </div>
