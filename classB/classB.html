@@ -14,14 +14,14 @@
     <img src = "../class.png" alt = "classes"/>
 
     <div>
-    <button onclick="showIP()" class = "Generate_IP">  Generate an IP address that would be assigned to a host device</button>
+    <button onclick="showIP()" class = "Generate_IP">  Generate an IP address that would be assigned to a computer (i.e. host device)</button>
     <p id = "generateIP"></p>
     </div>
 
     <form id = "form-1">
 
         <div id = "id_0">
-            <label for = "subnet_mask">What is the default subnet mask IP address for the class B IP addresses ?</label>
+            <label for = "subnet_mask">What is the default subnet mask IP address assigned to the computer ?</label>
             <select name="subnet_mask" id="subnet_mask" onchange="next0()">
                 <option value = "N"> 0.0.0.0</option>
                 <option value = "A"> 255.0.0.0</option>
@@ -36,7 +36,7 @@
         </div>
 
         <div id = "id_1">
-            <label for = "sub_id">What is the subnet mask IP address associated with the CIDR value for the IP address assigned to the host device ?</label>
+            <label for = "sub_id">What is the subnet mask IP address associated with the CIDR value for the IP address assigned to the computer ?</label>
             <input type="text" id = "sub_id" name = "sub_id" onchange="next1()"/>
 
             <div id = "feedback_mssg1"></div>
@@ -53,14 +53,14 @@
         </div>
 
         <div id = "id_1_b">
-            <label for = "binary_id">  What is the binary form of the IP address assigned to the host device ?</label>
+            <label for = "binary_id">  What is the binary form of the IP address assigned to the computer ?</label>
             <input type="text" id = "binary_id" name = "binary_id" onchange="next1_b()"/><br>
             <div id = "feedback_mssg1_b"></div><br><br>
             <a class = "answer-button" href = "https://whatismyipaddress.com/ip-address-to-binary" target = "_blank" id = "convert-button"> How to Convert ?</a>
         </div>        
 
         <div id = "id_2">
-            <label for = "net_id">What is the network IP address associated with the host device? </label>
+            <label for = "net_id">What is the network IP address associated with the computer? </label>
             <input type="text" id = "net_id" name = "net_id" onchange="next2()"/>
 
             <div id = "feedback_mssg2"></div>
@@ -80,7 +80,7 @@
         </div>
 
         <div id = "id_3" >
-            <label for = "broad_id"> What broadcast IP address will the host device use to broadcast IP packets to all other computers that reside in the same broadcast domain (i.e. subnet) ?</label>
+            <label for = "broad_id"> What broadcast IP address will the computer use to broadcast IP packets to all other computers that reside in the same broadcast domain (i.e. subnet) ?</label>
             <input type="text" id = "broad_id" name = "broad_id" onchange="next3()"/>
             <div id = "feedback_mssg3"></div>
             <div class = "answer-button" id = "answer-button-4"> Hints </div>
@@ -101,7 +101,7 @@
         </div>
 
         <div id = "id_4">
-            <label for = "first_id">What is the first assignable IP address for the broadcast domain in which the host device (computer) resides ?</label>
+            <label for = "first_id">What is the first assignable IP address for the broadcast domain in which the computer resides ?</label>
             <input type="text" id = "first_id" name = "first_id" onchange="next4()"/>
             <div id = "feedback_mssg4"></div>
             <div class = "answer-button" id = "answer-button-5"> Hints  </div>
@@ -126,7 +126,7 @@
         </div>
 
         <div id = "id_6">
-            <label for = "usable_host"> How many total assignable IP addresses exist for the broadcast domain in which the host device (computer) resides ?</label>
+            <label for = "usable_host"> How many total assignable IP addresses exist for the broadcast domain in which the computer resides ?</label>
             <input type="text" id = "usable_host" name = "usable_host" onchange="next6()"/>
             <div id = "feedback_mssg6"></div>
             <div class = "answer-button" id = "answer-button-7"> Hints  </div>
