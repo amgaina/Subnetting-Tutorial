@@ -72,7 +72,7 @@ function showIP() {
   let ip_string = ip[0] + "." + ip[1] + "." + ip[2] + "." + ip[3];
 
   getclass.innerHTML =
-    "Lets assume that your computer (i.e host device) has been assigned the IP address and the CIDR value shown below: " +
+    "Lets assume that a computer (i.e host device) has been assigned the IP address and the CIDR value shown below: " +
     "<br><span style = 'color: blue; text-decoration : underline; font-size: 30px;'>" +
     ip_string +
     " / " +

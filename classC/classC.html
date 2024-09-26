@@ -21,7 +21,7 @@
     <form id = "form-1">
 
         <div id = "id_0">
-            <label for = "subnet_mask"> What is the default subnet mask IP address assigned to the computer ?</label>
+            <label for = "subnet_mask"> What is the default subnet mask IP address associated with a class C IP address ?</label>
             <select name="subnet_mask" id="subnet_mask" onchange="next0()">
                 <option value = "N"> 0.0.0.0</option>
                 <option value = "A"> 255.0.0.0</option>
@@ -36,7 +36,7 @@
         </div>
 
         <div id = "id_1">
-            <label for = "sub_id"> What is the subnet mask IP address associated with the CIDR value for the IP address assigned to the computer ?</label>
+            <label for = "sub_id"> What subnet mask IP address will be assigned to the computer? </label>
             <input type="text" id = "sub_id" name = "sub_id" onchange="next1()"/>
 
             <div id = "feedback_mssg1"></div>
@@ -60,7 +60,7 @@
         </div>        
 
         <div id = "id_2">
-            <label for = "net_id"> What is the network IP address associated with the computer? </label>
+            <label for = "net_id">What network IP address is assigned to the broadcast domain(i.e. subnet) in which the computer resides?</label>
             <input type="text" id = "net_id" name = "net_id" onchange="next2()"/>
 
             <div id = "feedback_mssg2"></div>
@@ -80,7 +80,7 @@
         </div>
 
         <div id = "id_3" >
-            <label for = "broad_id"> What broadcast IP address will the computer use to broadcast IP packets to all other computers that reside in same broadcast domain (i.e. subnet)</label>
+            <label for = "broad_id">  What broadcast IP address is assigned to the broadcast domain in which the computer resides? </label>
             <input type="text" id = "broad_id" name = "broad_id" onchange="next3()"/>
             <div id = "feedback_mssg3"></div>
             <div class = "answer-button" id = "answer-button-4"> Hints</div>
@@ -101,7 +101,7 @@
         </div>
 
         <div id = "id_4">
-            <label for = "first_id"> What is the first assignable IP address for the broadcast domain in which the computer (computer) resides ? </label>
+            <label for = "first_id"> What is the first assignable IP address for the broadcast domain in which the computer resides ? </label>
             <input type="text" id = "first_id" name = "first_id" onchange="next4()"/>
             <div id = "feedback_mssg4"></div>
             <div class = "answer-button" id = "answer-button-5"> Hints  </div>
@@ -115,7 +115,7 @@
         </div>
 
         <div id = "id_5">
-            <label for = "last_id"> What is the last assignable IP address for the broadcast domain in which our computer resides ?</label>
+            <label for = "last_id"> What is the last assignable IP address for the broadcast domain in which the computer resides ?</label>
             <input type="text" id = "last_id" name = "last_id" onchange="next5()"/>
             <div id = "feedback_mssg5"></div>
             <div class = "answer-button" id = "answer-button-6"> Hints </div>
