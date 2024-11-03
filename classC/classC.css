@@ -76,6 +76,88 @@ input{
     background-color: antiquewhite;
     text-decoration: underline;
 }
+@media (max-width: 1024px) {
+    * {
+        font-size: 22px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+    input, select {
+        width: 90%;
+        font-size: 18px;
+    }
+    .answer-button {
+        width: 90%;
+        font-size: 18px;
+    }
+    #answer-1, #answer-2, #answer-3, #answer-4, #answer-5, #answer-6, #answer-7 {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
 
+@media (max-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+    input, select {
+        width: 85%;
+        font-size: 16px;
+    }
+    .answer-button {
+        width: 85%;
+        font-size: 16px;
+    }
+    #answer-1, #answer-2, #answer-3, #answer-4, #answer-5, #answer-6, #answer-7 {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    input, select {
+        width: 80%;
+        font-size: 14px;
+    }
+    .answer-button {
+        width: 80%;
+        font-size: 14px;
+    }
+    #answer-1, #answer-2, #answer-3, #answer-4, #answer-5, #answer-6, #answer-7 {
+        font-size: 16px;
+        padding: 10px;
+    }
+    #form-1, #id_1, #id_2, #id_3, #id_4, #id_5, #id_6, #id_1_b {
+        margin: 20px;
+    }
+}
+.image-1 {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: auto; 
+}
 
 

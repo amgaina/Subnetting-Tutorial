@@ -76,5 +76,65 @@ input{
     background-color: antiquewhite;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    #answer-1, #answer-2, #answer-3, #answer-4, #answer-5, #answer-6, #answer-7 {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    #convert-button {
+        font-size: 0.9rem;
+    }
+
+    .learn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px;
+        width: 90%;
+        max-width: 250px;
+    }
+
+    #answer-1, #answer-2, #answer-3, #answer-4, #answer-5, #answer-6, #answer-7 {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    #generateIP {
+        font-size: 0.9rem;
+    }
+
+    #form-1, #id_1, #id_2, #id_3, #id_4, #id_5, #id_6, #id_1_b {
+        margin: 20px;
+    }
+}
+.image-2 {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: auto; 
+}
 
 

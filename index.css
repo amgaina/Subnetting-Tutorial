@@ -1,53 +1,128 @@
-*{
-    align-items: center;
-    margin: auto;
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 1rem;
 }
-.subnetting{
-    max-width: 100%;
-    margin-top: 40px;
-}
-.welcome{
+
+/* Welcome Message */
+.welcome {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     text-decoration: underline;
-    margin-top: 50px;
-    font-size: 50px;
     animation: slideIn 2s ease-in-out;
-    margin-bottom: 40px;
 }
+
 @keyframes slideIn {
     from {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
-.buttons{
+/* Paragraph Text */
+p {
+    margin: 1.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* Heading */
+.class {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Button Container */
+.buttons {
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
 }
-.buttons:hover{
+
+/* Button Styles */
+button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
     cursor: pointer;
+    animation: slidetop 2s ease-out;
+    transition: background-color 0.3s ease;
 }
-@keyframes slidetop{
-    from{
+
+button a {
+    color: #000;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+@keyframes slidetop {
+    from {
         transform: translateY(100%);
     }
-    to{
+    to {
         transform: translateY(0);
     }
 }
-.class{
-    margin-top: 40px;
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin: 1rem;
+    }
+
+    .class {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
-button{
-    padding: 10px;
-    border-radius: 20px;
-    animation: slidetop 2s ease-out;
+
+@media (max-width: 480px) {
+    .welcome {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+        margin: 0.75rem;
+    }
+
+    .class {
+        font-size: 1.1rem;
+        margin-top: 0.75rem;
+    }
+
+    button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
 }
